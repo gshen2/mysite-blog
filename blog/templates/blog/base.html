@@ -1,3 +1,4 @@
+{% load blog_tags %}
 {% load static %}
 <!DOCTYPE html>
 <html>
@@ -14,7 +15,8 @@
     <h2>
         <a href="/blog">Homepage</a>
     </h2>
-    <p>This is my django blog.</p>
+    <p>This is my django blog.
+        There are currently {% total_posts %} posts.</p>
     <h2>
         <a href="/admin">Admin</a>
     </h2>
